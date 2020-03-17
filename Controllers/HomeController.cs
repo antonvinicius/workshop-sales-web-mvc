@@ -28,6 +28,13 @@ namespace SalesWebMvc.Controllers
             return View();
         }
 
+        public IActionResult About()
+        {
+            ViewData["AppInfo"] = "Web sale application in C#";
+            ViewData["Developer"] = "Antonio Vinicius";
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
