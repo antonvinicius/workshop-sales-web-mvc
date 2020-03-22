@@ -38,10 +38,5 @@ namespace SalesWebMvc.Controllers
             var result = await _salesRecordService.FindByDateAsync(minDate, maxDate);
             return View(result);
         }
-
-        public IActionResult GroupingSearch()
-        {
-            return View();
-        }
     }
 }
